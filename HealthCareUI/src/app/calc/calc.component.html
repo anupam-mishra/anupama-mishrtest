@@ -1,0 +1,21 @@
+<p>
+  Context is {{ context }}
+</p>
+<div [ngSpeechContext]="['medicine']"
+>
+  Say medicine
+  <div *ngFor="let medicine of medicines" style="display: inline-block;">    
+    <app-medicine [medicine]="medicine"></app-medicine>
+  </div>
+</div>
+<div [ngSpeechContext]="['Next']">
+   
+</div>
+<!-- <div [ngSpeechContext]="['comment']">
+  <span ngSpeechActionCommand="record" [ngSpeechActionContext]="['comment']"
+    [ngSpeechAction]="recordStart">Say "Comment", then "Record".</span>
+  <textarea>{{ comment }}</textarea>
+  <span ngSpeechActionCommand="over" [ngSpeechActionContext]="['comment']"
+    [ngSpeechAction]="recordStop">Say "Over" when your message is complete.</span>
+</div> -->
+

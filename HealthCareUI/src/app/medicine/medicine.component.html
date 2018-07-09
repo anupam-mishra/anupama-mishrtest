@@ -1,0 +1,11 @@
+
+  <div [ngSpeechActionContext]="['medicine']"
+      [ngSpeechActionCommand]="medicine"
+      [ngSpeechAction]="order">
+  </div>
+  <ul *ngIf="ordered">
+      <li>{{medicine}}</li>      
+  </ul>
+       
+
+
